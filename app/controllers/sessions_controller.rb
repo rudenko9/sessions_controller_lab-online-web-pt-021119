@@ -7,8 +7,8 @@ class SessionsController < ApplicationController
   end
   
   def create
-    
-    
+    @name = Name.new(name_params)
+    @name.save
     redirect_to sessions_new
   end
   
