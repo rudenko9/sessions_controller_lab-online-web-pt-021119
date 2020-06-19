@@ -2,6 +2,7 @@ class SessionsController < ApplicationController
   def new
     
     @name = Name.all
+    redirect_to sessions_new
     
   end
   
